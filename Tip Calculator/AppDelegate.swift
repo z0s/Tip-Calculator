@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PureLayout
+import IoniconsSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow()
+        let vc = ViewController()
+        let tabBar = UITabBarController()
+        let rateVC = RateViewController()
+        tabBar.setViewControllers([vc, rateVC], animated: true)
+        
+        let vcBarItem = UITabBarItem()
+        vcBarItem.image = Ionicons.socialUsdOutline.image(35, color: .black)
+        vcBarItem.title = "Calculate"
+        vc.tabBarItem = vcBarItem
+        
+        let rateBarItem = UITabBarItem()
+        rateBarItem.image = Ionicons.star.image(35, color: .black)
+        rateBarItem.title = "Rate"
+        rateVC.tabBarItem = rateBarItem
+            
+            
+        
+        
+        
+        window?.rootViewController = tabBar
+        window?.makeKeyAndVisible()
         return true
     }
 
