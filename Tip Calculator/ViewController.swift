@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     fileprivate let titleLabel = UILabel()
     fileprivate let inputTextField = UITextField()
-    fileprivate var totalLabel = UILabel()
+    fileprivate let adjustdedTotal = UILabel()
+    fileprivate var tipLabel = UILabel()
     fileprivate let splitBetween2 = UILabel()
     fileprivate let splitBetween3 = UILabel()
     fileprivate let splitBetween4 = UILabel()
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .lightGray
         view.addSubview(titleLabel)
         view.addSubview(inputTextField)
-        view.addSubview(totalLabel)
+        view.addSubview(tipLabel)
         view.addSubview(tipSegmentedControl)
         view.addSubview(lusterSegmentedControl)
         view.addSubview(splitBetween2)
@@ -53,35 +54,47 @@ class ViewController: UIViewController {
         view.addSubview(splitImageView9)
         
         
-//        inputTextField.addTarget(self, action: <#T##Selector#>, for: <#T##UIControlEvents#>)
+//
         
         let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
-        let attrForPlaceholder = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 29.0)! ]
+        let attrForPlaceholder = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 70.0)! ]
         
         
-        titleLabel.attributedText = NSAttributedString(string: "The Tip Companion \nGuide".uppercased(), attributes: attr)
+        titleLabel.attributedText = NSAttributedString(string: "The Tip Companion \nGuide".capitalized, attributes: attr)
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
         titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 10)
         titleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
         
-        inputTextField.keyboardType = .numberPad
+        inputTextField.keyboardType = .decimalPad
         
         inputTextField.autoPinEdge(.top, to: .bottom, of: titleLabel, withOffset: 20)
-        inputTextField.backgroundColor = .black
+        inputTextField.backgroundColor = .clear
         inputTextField.autoAlignAxis(toSuperviewAxis: .vertical)
         inputTextField.autoMatch(.width, to: .width, of: titleLabel)
-        
+        inputTextField.font = UIFont(name: "Chalkduster", size: 70.0)
+        inputTextField.textColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
+        inputTextField.textAlignment = .right
+        inputTextField.delegate = self
+//        inputTextField.addTarget(self, action: #selector(), for: .editingChanged)
+//        
         inputTextField.attributedPlaceholder = NSAttributedString(string: "$", attributes: attrForPlaceholder)
-//        inputTextField.attributedText = NSAttributedString(string: inputTextField.text, attributes: attrForPlaceholder)
-//        inputTextField.
-        
-        
+
         
         let str =  "Hey I am a placeholder."
+        tipSegmentedControl.selectedSegmentIndex = 0
+        let tipStr = tipSegmentedControl.titleForSegment(at: tipSegmentedControl.selectedSegmentIndex)
         
         
         let attrStr = NSAttributedString(string: str, attributes: attr)
+        let attrStrForTip = NSAttributedString(string: tipStr!, attributes: attr)
+
+        
+        tipLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
+//        tipLabel.autoAlignAxis(toSuperviewAxis: .vertical)
+        tipLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 200)
+        
+        tipLabel.attributedText = attrStrForTip
         splitBetween2.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitBetween2.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
         splitBetween2.backgroundColor = .black
@@ -161,6 +174,20 @@ class ViewController: UIViewController {
         get { return true }
     }
     
+    func textFieldHasValueChanged() {
+        
+    }
+    
 
+}
+extension ViewController : UITextFieldDelegate  {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 7
+        let currentString = textField.text! as NSString
+        let newString: NSString =
+            currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+//        return ((textField.text?.characters.count)! <= 5)
+    }
 }
 
