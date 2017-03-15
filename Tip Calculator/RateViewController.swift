@@ -12,14 +12,14 @@ import IoniconsSwift
 
 fileprivate let cosmosView = CosmosView()
 fileprivate let titleLabel = UILabel()
-fileprivate let subText = UILabel()
-fileprivate let tip = UILabel()
+fileprivate let total = UILabel()
+fileprivate var tip = Int()
 fileprivate let splitBetween2 = UILabel()
 fileprivate let splitBetween3 = UILabel()
 fileprivate let splitBetween4 = UILabel()
-fileprivate let titleStr = "Rate the service \nyou received tonight:".uppercased()
+fileprivate let titleStr = "Rate the experience \nyou enjoyed tonight:".capitalized
 fileprivate let subTextStr = String().uppercased()
-fileprivate var totalStr = String().uppercased()
+fileprivate let totalStr = "Pay an adjusted total \ncost of $().".capitalized
 fileprivate let splitImageView = UIImageView()
 fileprivate let splitImageView2 = UIImageView()
 fileprivate let splitImageView3 = UIImageView()
@@ -41,8 +41,7 @@ class RateViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
         view.addSubview(titleLabel)
-        view.addSubview(subText)
-        view.addSubview(tip)
+        view.addSubview(total)
         view.addSubview(cosmosView)
         view.addSubview(splitBetween2)
         view.addSubview(splitBetween3)
@@ -116,22 +115,23 @@ class RateViewController: UIViewController {
         splitImageView9.autoConstrainAttribute(.leading, to: .leading, of: splitImageView8, withOffset: 50)
         
         titleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
-        titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 10)
+        titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 30)
         titleLabel.attributedText = NSAttributedString(string: titleStr, attributes: attr)
         titleLabel.textAlignment = .center
-//        titleLabel.sizeToFit()
         titleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         titleLabel.numberOfLines = 0
         
         
-        subText.autoAlignAxis(toSuperviewAxis: .vertical)
-        tip.autoAlignAxis(toSuperviewAxis: .vertical)
-        tip.autoAlignAxis(toSuperviewAxis: .horizontal)
-        tip.text = "Your tip percent goes here."
+        total.autoAlignAxis(toSuperviewAxis: .vertical)
+        total.autoPinEdge(toSuperviewEdge: .top, withInset: 240)
+        total.textAlignment = .center
+        total.numberOfLines = 0
+        total.lineBreakMode = NSLineBreakMode.byWordWrapping
+        total.attributedText = NSAttributedString(string: totalStr, attributes: attr)
         
         
         cosmosView.autoAlignAxis(toSuperviewAxis: .vertical)
-        cosmosView.autoPinEdge(toSuperviewEdge: .top, withInset: 100)
+        cosmosView.autoPinEdge(toSuperviewEdge: .top, withInset: 130)
         cosmosView.settings.starSize = 60
         cosmosView.settings.fillMode = .full
         cosmosView.settings.filledColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
@@ -143,21 +143,21 @@ class RateViewController: UIViewController {
         cosmosView.didFinishTouchingCosmos = {
             rating in
             
-            switch rating {
-            case 0 :
-                tip.text = "10"
-            case 1 :
-                tip.text = "12"
-            case 2:
-                tip.text = "15"
-            case 3:
-                tip.text = "18"
-            case 4:
-                tip.text = "20"
-            case 5:
-                tip.text = "25"
-            default: break
-            }
+//            switch rating {
+//            case 0 :
+//                tip.text = "10"
+//            case 1 :
+//                tip.text = "12"
+//            case 2:
+//                tip.text = "15"
+//            case 3:
+//                tip.text = "18"
+//            case 4:
+//                tip.text = "20"
+//            case 5:
+//                tip.text = "25"
+//            default: break
+//            }
         }
         
         closing.attributedText = NSAttributedString(string: closingStr, attributes: attr)
