@@ -1,0 +1,1296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091333BE08D4FD7E9C42484E39206EE /* Pods-Tip CalculatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C9B1B761BC626D0AEFFC515E71F21F /* Pods-Tip CalculatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E9BE4FE98677CC95F086933F7D193 /* CosmosSettings.swift */; };
+		0B3D581B03B27149145B7DE0E9EE4CE1 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 109622A6F1482B08952E9D5BA0A0F5E9 /* NSArray+PureLayout.m */; };
+		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1409A054C9A68D08FA1DE09BC6447B /* CosmosLocalizedRating.swift */; };
+		0FAAA45BCC813491AD10F75D6EA002A8 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8174F4B62961A860D7B78484B6D22067 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		138D7A2BD0377FF590437FBCFB318D37 /* Pods-Tip Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ABBD1F1816EF22A952698D05486C0F /* Pods-Tip Calculator-dummy.m */; };
+		1F026DF5E3F93D94BC67A84F4D92B926 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 658451E625F3D98AD63DC6D3561D6DB1 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0018EF25078C357CFDCE3035C8B28B /* CosmosSize.swift */; };
+		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F192A35942E1F3F2F571106F68DD9 /* CosmosDefaultSettings.swift */; };
+		3B5DB4A99B9A189CE41944711D8A562F /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2A3EE3F608ED1E8CB39DAEFC4A47E24 /* ionicons.ttf */; };
+		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DA0A02EF84ABB14AB256FB997EC8C4 /* Cosmos-dummy.m */; };
+		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF6929EC9FFCBB8967AD4948576684 /* CosmosText.swift */; };
+		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ADB3FA40FCC365B7B21356D971D158 /* CosmosView.swift */; };
+		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15032CC904D8461BBEDD914FAF0D6AAF /* CosmosTouch.swift */; };
+		58CECB29EEF6E35F23F5D6DA6A691BC9 /* Pods-Tip CalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36849DFF4D19EF445EEE81C4159F3428 /* Pods-Tip CalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C0E7C4F366FDFED5F605FC54D732B74 /* IoniconsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4E80FB3E65CDF9373BD600967EA31 /* IoniconsSwift-dummy.m */; };
+		5E2C9271BF1DF9C69A5207C4E0FFE1EB /* Pods-Tip CalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1D6248851861EB181B698F8D30B80 /* Pods-Tip CalculatorTests-dummy.m */; };
+		67AA6940809643311AD95156DB2247F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		69891F93FD4175DE6D0991D001256F92 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D0DD7F61042ED1AB37400850910B2C /* NSLayoutConstraint+PureLayout.m */; };
+		71A5AC7C2FE8879A296682F69F77A6B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73F57B534ECA86561B827E807B7580E /* CosmosAccessibility.swift */; };
+		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2086C5EAED8512519204192264DA5 /* StarFillMode.swift */; };
+		940466EAFA09AF7AB52B0FBE3D252723 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F40B201726828F9C62AF019F6182BC /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DDF29C4D5BB0E0FEECEE7B992FD9FC /* CosmosRating.swift */; };
+		9C8F1DC9C285E440A129ABDD8A110B00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		A3CB71923B43F9CEE904FC336C32406F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		A4AE6E7FEBD36A07FC607DE510BBF1DC /* IoniconsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1760A12E814A722AEF3CE03439D0F92 /* IoniconsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF40AF0C64C95557B7CEF609CF2B8DB /* CosmosLayers.swift */; };
+		B3E794B3A8E529AC8043FC7E95E03969 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3C14ED555331B309113753AFE381B7 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B74014274CB38CB1FE623DCC8CC0F9B8 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F6130D49405ECB2DE1B47E559CA4E8F /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF3D6C75CF84771BA46FDAC59C01512A /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ADB3FC4441B9DC20A17C3B03F4C /* PureLayout-dummy.m */; };
+		C0667CA76A7C9FF2F6AFF84168E14EFE /* ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB846AF4CB2002A50190D65ABBF0A68 /* ionicons.swift */; };
+		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B68B97B7511DAC93C03678397C96F0 /* RightToLeft.swift */; };
+		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1AF9023F2FD3AF75FBB6BD1B33102A /* StarLayer.swift */; };
+		CEB692B173A787D83ECFFE57D559D5D0 /* Pods-Tip Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CB24EDFEC5CF986F51D14B89E74E5B /* Pods-Tip Calculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF79AF26791BDB7EC79AD291E36EF62A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		D28533F5C9094AB3A2F2DBDD6D5617A6 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B063522F239DE0E9BFB1B985230BBFE7 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D59E970779A13E0F9666A3E816AB5C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF626013CCC14556A8BC58B36B95E5B /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8844B2DA3B9F84B16B1C7923C871D /* CosmosTouchTarget.swift */; };
+		EF108CD9531722F70672CB0CF29AEE3C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E47109BEBE640B72EDB991EB8FAA /* ALView+PureLayout.m */; };
+		EFD1D1F9B0F1E8942AE00FF7407380AB /* Pods-Tip CalculatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F28EBFA79CEBC67A9BA12AD61F7E0DC /* Pods-Tip CalculatorUITests-dummy.m */; };
+		F1D3885DAE8663611EE6C361A26DCB80 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D404EA07E85380735864E795BAD192B /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F37DDDC2660EB17E1BE35429C1C58AD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCC5F34FB7DD74B79A35B443F66C3B /* CosmosLayerHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30DA46A6F36075CF46DD56DF82474130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BEC2CE434F943936694B73B60447D2C;
+			remoteInfo = PureLayout;
+		};
+		4CA1FC9C8B67383DB0E31B1ABB80A539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5AB2C856EB68E3ECE8C535BF5957A0;
+			remoteInfo = IoniconsSwift;
+		};
+		A1FE8FE992261CAF8F7FF4B88C9A2615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
+			remoteInfo = Cosmos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03042CDE209164884EE68159491E474F /* Pods-Tip CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0ED4E80FB3E65CDF9373BD600967EA31 /* IoniconsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IoniconsSwift-dummy.m"; sourceTree = "<group>"; };
+		0F14FCA281E138DE63F4332A20EA4A8C /* Pods-Tip Calculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tip Calculator.modulemap"; sourceTree = "<group>"; };
+		109622A6F1482B08952E9D5BA0A0F5E9 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		110DFF75644F791DDC8575C6DFD5CB33 /* Pods-Tip Calculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip Calculator-resources.sh"; sourceTree = "<group>"; };
+		15032CC904D8461BBEDD914FAF0D6AAF /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		16DDF29C4D5BB0E0FEECEE7B992FD9FC /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		1D404EA07E85380735864E795BAD192B /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		1FCCC5F34FB7DD74B79A35B443F66C3B /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		22CEA485B2C4CF58E1BB0C37F91FF3D9 /* Pods-Tip CalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tip CalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A5EE1AF83C8E558F0C57745DDC75A68 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
+		2B306B5D8A50117673C48F8787F65BBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB846AF4CB2002A50190D65ABBF0A68 /* ionicons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ionicons.swift; path = IoniconsSwift/ionicons.swift; sourceTree = "<group>"; };
+		33D38493B0BE3A4E6A2B73C52578CE1E /* Pods-Tip CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36849DFF4D19EF445EEE81C4159F3428 /* Pods-Tip CalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tip CalculatorTests-umbrella.h"; sourceTree = "<group>"; };
+		37595C0B9705BA4E922BE4E98E951BA1 /* Pods-Tip CalculatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tip CalculatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3856A333411E4CD70A724C15E9C5B6DA /* Pods-Tip CalculatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tip CalculatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A33E47109BEBE640B72EDB991EB8FAA /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		3F6130D49405ECB2DE1B47E559CA4E8F /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		464F192A35942E1F3F2F571106F68DD9 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		48D0DD7F61042ED1AB37400850910B2C /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		53ADB3FA40FCC365B7B21356D971D158 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		553AC2BCC460574BC7F293243FD4C408 /* Pods-Tip Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		58C9B1B761BC626D0AEFFC515E71F21F /* Pods-Tip CalculatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tip CalculatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		5CF40AF0C64C95557B7CEF609CF2B8DB /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		5E12279D5A45FB64451A6946D63BACFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60FA535172FE6F4FC4B1FA1760B548D5 /* Pods_Tip_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tip_CalculatorUITests.framework; path = "Pods-Tip CalculatorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6113A3CADC808C0DA6384F29F0CBE757 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63F151A1BE58E1D42319D78AB9987CAB /* Pods-Tip Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tip Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		64BF3CB3A90D66D39439E1B25BF94C9F /* Pods-Tip Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tip Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		658451E625F3D98AD63DC6D3561D6DB1 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		6A0018EF25078C357CFDCE3035C8B28B /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		7C893401928EB67E13579E3EE3222CB1 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FD452DF0DCCC0FC1FFC10DA786F6D90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D060AA33BF3B0A3E063B2A598024BE /* IoniconsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IoniconsSwift.xcconfig; sourceTree = "<group>"; };
+		8174F4B62961A860D7B78484B6D22067 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		827E9BE4FE98677CC95F086933F7D193 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		83CB24EDFEC5CF986F51D14B89E74E5B /* Pods-Tip Calculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tip Calculator-umbrella.h"; sourceTree = "<group>"; };
+		85E8F98DFDD02729F20F95EDC44AE31B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8658A88E0CC110E28554633FA5A4BE8C /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		8D1409A054C9A68D08FA1DE09BC6447B /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		8DE2086C5EAED8512519204192264DA5 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		8F28EBFA79CEBC67A9BA12AD61F7E0DC /* Pods-Tip CalculatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tip CalculatorUITests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A499A40F29FDC993C6E272A5F8DBBD /* IoniconsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IoniconsSwift.modulemap; sourceTree = "<group>"; };
+		9A9C2ADB3FC4441B9DC20A17C3B03F4C /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		A4FDFC16EFAACDB638435DA630FE4151 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		A6FF6929EC9FFCBB8967AD4948576684 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		ACA8844B2DA3B9F84B16B1C7923C871D /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		AD1AF9023F2FD3AF75FBB6BD1B33102A /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		B063522F239DE0E9BFB1B985230BBFE7 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		B1EFE23DC8046B08E1021D41BEB3BF9F /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		B22FADE34345694DA6B8F6BCE080782E /* Pods-Tip CalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tip CalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B89D275D89C781E211BCD13FB86D63B4 /* Pods_Tip_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tip_Calculator.framework; path = "Pods-Tip Calculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9464CD91C871B977FC74F36A0297756 /* IoniconsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IoniconsSwift.framework; path = IoniconsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1760A12E814A722AEF3CE03439D0F92 /* IoniconsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-umbrella.h"; sourceTree = "<group>"; };
+		C3C1D6248851861EB181B698F8D30B80 /* Pods-Tip CalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tip CalculatorTests-dummy.m"; sourceTree = "<group>"; };
+		C4FE68EE89BE6D2942039C2195D968AC /* Pods-Tip Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		C8B5AF2F2AF84B94001579729DE667CE /* Pods-Tip CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC75392EC78324033BDEE03D863BA3E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBD46CAD1D092324C9CBF0507DC94E9 /* Pods-Tip CalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip CalculatorTests-resources.sh"; sourceTree = "<group>"; };
+		CE77CB5E25E440CF15A1C0BAE20B9BD3 /* Pods-Tip CalculatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tip CalculatorUITests.modulemap"; sourceTree = "<group>"; };
+		D2A3EE3F608ED1E8CB39DAEFC4A47E24 /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ionicons.ttf; path = IoniconsSwift/ionicons.ttf; sourceTree = "<group>"; };
+		D45F045946B27668BDF69EDAA9A0613E /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		D75AD043B671E1EF7A61391792C52B87 /* IoniconsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-prefix.pch"; sourceTree = "<group>"; };
+		D993EF848463359879C1717444B6B8C9 /* Pods-Tip CalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tip CalculatorTests.modulemap"; sourceTree = "<group>"; };
+		D9F40B201726828F9C62AF019F6182BC /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		DF632EB9B8B4F78F75AAE2E4232E9D8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E422ED85D4260C4702C608A7B533F88B /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4ABBD1F1816EF22A952698D05486C0F /* Pods-Tip Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tip Calculator-dummy.m"; sourceTree = "<group>"; };
+		E5B68B97B7511DAC93C03678397C96F0 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		E6ECA9BA569BBC9C7E6893B87F6E500D /* Pods_Tip_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tip_CalculatorTests.framework; path = "Pods-Tip CalculatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73F57B534ECA86561B827E807B7580E /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		E7DA0A02EF84ABB14AB256FB997EC8C4 /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		EAF626013CCC14556A8BC58B36B95E5B /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		EC22CAB4E4810BA325A94B885604E99F /* Pods-Tip CalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip CalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		ED73132F2E18D516984D51D0869F6239 /* Pods-Tip Calculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip Calculator-frameworks.sh"; sourceTree = "<group>"; };
+		F161C376D8DFC8CEE60849F3727C3224 /* Pods-Tip CalculatorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip CalculatorUITests-resources.sh"; sourceTree = "<group>"; };
+		F23C1E6D0FEC41444946D1FFEA749447 /* Pods-Tip CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tip CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3C14ED555331B309113753AFE381B7 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		FEF65B6ECF99DC6C6265FDB41200972D /* Pods-Tip CalculatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tip CalculatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08103B4CF4812776E5FCE918B1E1850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59E970779A13E0F9666A3E816AB5C6D /* Foundation.framework in Frameworks */,
+				CF79AF26791BDB7EC79AD291E36EF62A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37DDDC2660EB17E1BE35429C1C58AD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76E731DB0472C0231964C4EAB2A94926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AA6940809643311AD95156DB2247F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844418C85636C2D84BFA54865E59A5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A5AC7C2FE8879A296682F69F77A6B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90662BED9F7B82777452C59B97F0BCB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8F1DC9C285E440A129ABDD8A110B00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDB085D026C70E0046B679535A8CE0B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CB71923B43F9CEE904FC336C32406F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05033D989E01733BAD5A5438DAD8ACE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2A3EE3F608ED1E8CB39DAEFC4A47E24 /* ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0CE14113B8AA08AB78243F096AB4F985 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D9F40B201726828F9C62AF019F6182BC /* ALView+PureLayout.h */,
+				3A33E47109BEBE640B72EDB991EB8FAA /* ALView+PureLayout.m */,
+				FB3C14ED555331B309113753AFE381B7 /* NSArray+PureLayout.h */,
+				109622A6F1482B08952E9D5BA0A0F5E9 /* NSArray+PureLayout.m */,
+				8174F4B62961A860D7B78484B6D22067 /* NSLayoutConstraint+PureLayout.h */,
+				48D0DD7F61042ED1AB37400850910B2C /* NSLayoutConstraint+PureLayout.m */,
+				3F6130D49405ECB2DE1B47E559CA4E8F /* PureLayout.h */,
+				1D404EA07E85380735864E795BAD192B /* PureLayout+Internal.h */,
+				B063522F239DE0E9BFB1B985230BBFE7 /* PureLayoutDefines.h */,
+				6E5DA3789C1FF1D119C3AB9336F629A3 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		1907F3004ACAE51E9A9CBDDBD7665FC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1EFE23DC8046B08E1021D41BEB3BF9F /* Cosmos.modulemap */,
+				2A5EE1AF83C8E558F0C57745DDC75A68 /* Cosmos.xcconfig */,
+				E7DA0A02EF84ABB14AB256FB997EC8C4 /* Cosmos-dummy.m */,
+				D45F045946B27668BDF69EDAA9A0613E /* Cosmos-prefix.pch */,
+				EAF626013CCC14556A8BC58B36B95E5B /* Cosmos-umbrella.h */,
+				7FD452DF0DCCC0FC1FFC10DA786F6D90 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0973A743B32CCA69720902D4CEBB10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC062F6A5FFE6EDC3BA0F1F783B301C2 /* Cosmos */,
+				C6CE21A91728DB5BB1C7EFAB06623975 /* IoniconsSwift */,
+				0CE14113B8AA08AB78243F096AB4F985 /* PureLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E5DA3789C1FF1D119C3AB9336F629A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E12279D5A45FB64451A6946D63BACFA /* Info.plist */,
+				7C893401928EB67E13579E3EE3222CB1 /* PureLayout.modulemap */,
+				A4FDFC16EFAACDB638435DA630FE4151 /* PureLayout.xcconfig */,
+				9A9C2ADB3FC4441B9DC20A17C3B03F4C /* PureLayout-dummy.m */,
+				8658A88E0CC110E28554633FA5A4BE8C /* PureLayout-prefix.pch */,
+				658451E625F3D98AD63DC6D3561D6DB1 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				4B0973A743B32CCA69720902D4CEBB10 /* Pods */,
+				F6053AAE3EB85BDEB9CF6CCADC76F0B8 /* Products */,
+				AB85485308F966E299EA1688A0B2362E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86357C5F08609657A08CED1F35AC9D50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC75392EC78324033BDEE03D863BA3E6 /* Info.plist */,
+				95A499A40F29FDC993C6E272A5F8DBBD /* IoniconsSwift.modulemap */,
+				80D060AA33BF3B0A3E063B2A598024BE /* IoniconsSwift.xcconfig */,
+				0ED4E80FB3E65CDF9373BD600967EA31 /* IoniconsSwift-dummy.m */,
+				D75AD043B671E1EF7A61391792C52B87 /* IoniconsSwift-prefix.pch */,
+				C1760A12E814A722AEF3CE03439D0F92 /* IoniconsSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IoniconsSwift";
+			sourceTree = "<group>";
+		};
+		9C4F56F1F606A1989DDC38210DE8DFBC /* Pods-Tip CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF632EB9B8B4F78F75AAE2E4232E9D8E /* Info.plist */,
+				D993EF848463359879C1717444B6B8C9 /* Pods-Tip CalculatorTests.modulemap */,
+				22CEA485B2C4CF58E1BB0C37F91FF3D9 /* Pods-Tip CalculatorTests-acknowledgements.markdown */,
+				B22FADE34345694DA6B8F6BCE080782E /* Pods-Tip CalculatorTests-acknowledgements.plist */,
+				C3C1D6248851861EB181B698F8D30B80 /* Pods-Tip CalculatorTests-dummy.m */,
+				EC22CAB4E4810BA325A94B885604E99F /* Pods-Tip CalculatorTests-frameworks.sh */,
+				CCBD46CAD1D092324C9CBF0507DC94E9 /* Pods-Tip CalculatorTests-resources.sh */,
+				36849DFF4D19EF445EEE81C4159F3428 /* Pods-Tip CalculatorTests-umbrella.h */,
+				03042CDE209164884EE68159491E474F /* Pods-Tip CalculatorTests.debug.xcconfig */,
+				C8B5AF2F2AF84B94001579729DE667CE /* Pods-Tip CalculatorTests.release.xcconfig */,
+			);
+			name = "Pods-Tip CalculatorTests";
+			path = "Target Support Files/Pods-Tip CalculatorTests";
+			sourceTree = "<group>";
+		};
+		AB85485308F966E299EA1688A0B2362E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C65046B58DC906BC867DDF0FC1C114F5 /* Pods-Tip Calculator */,
+				9C4F56F1F606A1989DDC38210DE8DFBC /* Pods-Tip CalculatorTests */,
+				F94F6635D751C377E082B1FF3EEA6039 /* Pods-Tip CalculatorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C65046B58DC906BC867DDF0FC1C114F5 /* Pods-Tip Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				2B306B5D8A50117673C48F8787F65BBA /* Info.plist */,
+				0F14FCA281E138DE63F4332A20EA4A8C /* Pods-Tip Calculator.modulemap */,
+				63F151A1BE58E1D42319D78AB9987CAB /* Pods-Tip Calculator-acknowledgements.markdown */,
+				64BF3CB3A90D66D39439E1B25BF94C9F /* Pods-Tip Calculator-acknowledgements.plist */,
+				E4ABBD1F1816EF22A952698D05486C0F /* Pods-Tip Calculator-dummy.m */,
+				ED73132F2E18D516984D51D0869F6239 /* Pods-Tip Calculator-frameworks.sh */,
+				110DFF75644F791DDC8575C6DFD5CB33 /* Pods-Tip Calculator-resources.sh */,
+				83CB24EDFEC5CF986F51D14B89E74E5B /* Pods-Tip Calculator-umbrella.h */,
+				553AC2BCC460574BC7F293243FD4C408 /* Pods-Tip Calculator.debug.xcconfig */,
+				C4FE68EE89BE6D2942039C2195D968AC /* Pods-Tip Calculator.release.xcconfig */,
+			);
+			name = "Pods-Tip Calculator";
+			path = "Target Support Files/Pods-Tip Calculator";
+			sourceTree = "<group>";
+		};
+		C6CE21A91728DB5BB1C7EFAB06623975 /* IoniconsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2FB846AF4CB2002A50190D65ABBF0A68 /* ionicons.swift */,
+				05033D989E01733BAD5A5438DAD8ACE3 /* Resources */,
+				86357C5F08609657A08CED1F35AC9D50 /* Support Files */,
+			);
+			name = IoniconsSwift;
+			path = IoniconsSwift;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6053AAE3EB85BDEB9CF6CCADC76F0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E422ED85D4260C4702C608A7B533F88B /* Cosmos.framework */,
+				B9464CD91C871B977FC74F36A0297756 /* IoniconsSwift.framework */,
+				B89D275D89C781E211BCD13FB86D63B4 /* Pods_Tip_Calculator.framework */,
+				E6ECA9BA569BBC9C7E6893B87F6E500D /* Pods_Tip_CalculatorTests.framework */,
+				60FA535172FE6F4FC4B1FA1760B548D5 /* Pods_Tip_CalculatorUITests.framework */,
+				6113A3CADC808C0DA6384F29F0CBE757 /* PureLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F94F6635D751C377E082B1FF3EEA6039 /* Pods-Tip CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85E8F98DFDD02729F20F95EDC44AE31B /* Info.plist */,
+				CE77CB5E25E440CF15A1C0BAE20B9BD3 /* Pods-Tip CalculatorUITests.modulemap */,
+				37595C0B9705BA4E922BE4E98E951BA1 /* Pods-Tip CalculatorUITests-acknowledgements.markdown */,
+				3856A333411E4CD70A724C15E9C5B6DA /* Pods-Tip CalculatorUITests-acknowledgements.plist */,
+				8F28EBFA79CEBC67A9BA12AD61F7E0DC /* Pods-Tip CalculatorUITests-dummy.m */,
+				FEF65B6ECF99DC6C6265FDB41200972D /* Pods-Tip CalculatorUITests-frameworks.sh */,
+				F161C376D8DFC8CEE60849F3727C3224 /* Pods-Tip CalculatorUITests-resources.sh */,
+				58C9B1B761BC626D0AEFFC515E71F21F /* Pods-Tip CalculatorUITests-umbrella.h */,
+				F23C1E6D0FEC41444946D1FFEA749447 /* Pods-Tip CalculatorUITests.debug.xcconfig */,
+				33D38493B0BE3A4E6A2B73C52578CE1E /* Pods-Tip CalculatorUITests.release.xcconfig */,
+			);
+			name = "Pods-Tip CalculatorUITests";
+			path = "Target Support Files/Pods-Tip CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		FC062F6A5FFE6EDC3BA0F1F783B301C2 /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				E73F57B534ECA86561B827E807B7580E /* CosmosAccessibility.swift */,
+				464F192A35942E1F3F2F571106F68DD9 /* CosmosDefaultSettings.swift */,
+				1FCCC5F34FB7DD74B79A35B443F66C3B /* CosmosLayerHelper.swift */,
+				5CF40AF0C64C95557B7CEF609CF2B8DB /* CosmosLayers.swift */,
+				8D1409A054C9A68D08FA1DE09BC6447B /* CosmosLocalizedRating.swift */,
+				16DDF29C4D5BB0E0FEECEE7B992FD9FC /* CosmosRating.swift */,
+				827E9BE4FE98677CC95F086933F7D193 /* CosmosSettings.swift */,
+				6A0018EF25078C357CFDCE3035C8B28B /* CosmosSize.swift */,
+				A6FF6929EC9FFCBB8967AD4948576684 /* CosmosText.swift */,
+				15032CC904D8461BBEDD914FAF0D6AAF /* CosmosTouch.swift */,
+				ACA8844B2DA3B9F84B16B1C7923C871D /* CosmosTouchTarget.swift */,
+				53ADB3FA40FCC365B7B21356D971D158 /* CosmosView.swift */,
+				E5B68B97B7511DAC93C03678397C96F0 /* RightToLeft.swift */,
+				8DE2086C5EAED8512519204192264DA5 /* StarFillMode.swift */,
+				AD1AF9023F2FD3AF75FBB6BD1B33102A /* StarLayer.swift */,
+				1907F3004ACAE51E9A9CBDDBD7665FC7 /* Support Files */,
+			);
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3161A954CD3BDF23E93CCC28D770A44C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE6E7FEBD36A07FC607DE510BBF1DC /* IoniconsSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D190DDABF459CFB980F8B2E5CB3A4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB692B173A787D83ECFFE57D559D5D0 /* Pods-Tip Calculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734B7059B208439CE99E466A6AB1FC0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				940466EAFA09AF7AB52B0FBE3D252723 /* ALView+PureLayout.h in Headers */,
+				B3E794B3A8E529AC8043FC7E95E03969 /* NSArray+PureLayout.h in Headers */,
+				0FAAA45BCC813491AD10F75D6EA002A8 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				F1D3885DAE8663611EE6C361A26DCB80 /* PureLayout+Internal.h in Headers */,
+				1F026DF5E3F93D94BC67A84F4D92B926 /* PureLayout-umbrella.h in Headers */,
+				B74014274CB38CB1FE623DCC8CC0F9B8 /* PureLayout.h in Headers */,
+				D28533F5C9094AB3A2F2DBDD6D5617A6 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DD3F04DBC341FC9776B2BA71ED8ED1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CECB29EEF6E35F23F5D6DA6A691BC9 /* Pods-Tip CalculatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F72A88918035AFA923560A84B87C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8902C41A7B38E903C50784585A822B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0091333BE08D4FD7E9C42484E39206EE /* Pods-Tip CalculatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B1F8D52788BAD55829E99671C8E205D /* Pods-Tip Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A5A752799146AD9381919644B9B63F /* Build configuration list for PBXNativeTarget "Pods-Tip Calculator" */;
+			buildPhases = (
+				AD929A0F2A5BFAD777FC888EB01EB72E /* Sources */,
+				90662BED9F7B82777452C59B97F0BCB3 /* Frameworks */,
+				64D190DDABF459CFB980F8B2E5CB3A4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834D9B2A8E7B7EE6532A6E729CE04802 /* PBXTargetDependency */,
+				4BA378DB259375EFD717D3F487F9B047 /* PBXTargetDependency */,
+				19D56AF6039F7E292CDC7F8B7A5C421F /* PBXTargetDependency */,
+			);
+			name = "Pods-Tip Calculator";
+			productName = "Pods-Tip Calculator";
+			productReference = B89D275D89C781E211BCD13FB86D63B4 /* Pods_Tip_Calculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1B5AB2C856EB68E3ECE8C535BF5957A0 /* IoniconsSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5666C1BE2926B5D196914EC98DA7D6D /* Build configuration list for PBXNativeTarget "IoniconsSwift" */;
+			buildPhases = (
+				657680F5008055BBDAA65ACD14ED2EBB /* Sources */,
+				08103B4CF4812776E5FCE918B1E1850C /* Frameworks */,
+				6F31CCDA75FDE2CCFA5F5A82EC3B2542 /* Resources */,
+				3161A954CD3BDF23E93CCC28D770A44C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IoniconsSwift;
+			productName = IoniconsSwift;
+			productReference = B9464CD91C871B977FC74F36A0297756 /* IoniconsSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2CCDB65377498D3EAD3807CBFC477A8B /* Pods-Tip CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1C6B03ABB1D1ADE2ECD9DEF49F0EBA /* Build configuration list for PBXNativeTarget "Pods-Tip CalculatorUITests" */;
+			buildPhases = (
+				7814115B8F6CE8292BF727B0B51C6436 /* Sources */,
+				844418C85636C2D84BFA54865E59A5BF /* Frameworks */,
+				E8902C41A7B38E903C50784585A822B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tip CalculatorUITests";
+			productName = "Pods-Tip CalculatorUITests";
+			productReference = 60FA535172FE6F4FC4B1FA1760B548D5 /* Pods_Tip_CalculatorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */;
+			buildPhases = (
+				64A8AA816E108F31E7CEE1A683E42839 /* Sources */,
+				23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */,
+				B7F72A88918035AFA923560A84B87C61 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = E422ED85D4260C4702C608A7B533F88B /* Cosmos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BEC2CE434F943936694B73B60447D2C /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5547CA7AFC3BD313ADBAEEDF4F43AAF /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				F2A0DCD0CB0A28650AB2CC4276223193 /* Sources */,
+				CDB085D026C70E0046B679535A8CE0B7 /* Frameworks */,
+				734B7059B208439CE99E466A6AB1FC0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 6113A3CADC808C0DA6384F29F0CBE757 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2B1CAAA54B8CF962F8CBA470EC9A878 /* Pods-Tip CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82A4E82BB5A305DB7CB072A7C15CFDA2 /* Build configuration list for PBXNativeTarget "Pods-Tip CalculatorTests" */;
+			buildPhases = (
+				051CE4B7E9E2283755919E37A3793727 /* Sources */,
+				76E731DB0472C0231964C4EAB2A94926 /* Frameworks */,
+				88DD3F04DBC341FC9776B2BA71ED8ED1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tip CalculatorTests";
+			productName = "Pods-Tip CalculatorTests";
+			productReference = E6ECA9BA569BBC9C7E6893B87F6E500D /* Pods_Tip_CalculatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F6053AAE3EB85BDEB9CF6CCADC76F0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */,
+				1B5AB2C856EB68E3ECE8C535BF5957A0 /* IoniconsSwift */,
+				1B1F8D52788BAD55829E99671C8E205D /* Pods-Tip Calculator */,
+				D2B1CAAA54B8CF962F8CBA470EC9A878 /* Pods-Tip CalculatorTests */,
+				2CCDB65377498D3EAD3807CBFC477A8B /* Pods-Tip CalculatorUITests */,
+				7BEC2CE434F943936694B73B60447D2C /* PureLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F31CCDA75FDE2CCFA5F5A82EC3B2542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5DB4A99B9A189CE41944711D8A562F /* ionicons.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		051CE4B7E9E2283755919E37A3793727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2C9271BF1DF9C69A5207C4E0FFE1EB /* Pods-Tip CalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A8AA816E108F31E7CEE1A683E42839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */,
+				7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */,
+				371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */,
+				F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */,
+				AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */,
+				0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */,
+				99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */,
+				015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */,
+				25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */,
+				424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */,
+				4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */,
+				E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */,
+				45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */,
+				C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */,
+				88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */,
+				C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657680F5008055BBDAA65ACD14ED2EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0667CA76A7C9FF2F6AFF84168E14EFE /* ionicons.swift in Sources */,
+				5C0E7C4F366FDFED5F605FC54D732B74 /* IoniconsSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7814115B8F6CE8292BF727B0B51C6436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD1D1F9B0F1E8942AE00FF7407380AB /* Pods-Tip CalculatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD929A0F2A5BFAD777FC888EB01EB72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138D7A2BD0377FF590437FBCFB318D37 /* Pods-Tip Calculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A0DCD0CB0A28650AB2CC4276223193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF108CD9531722F70672CB0CF29AEE3C /* ALView+PureLayout.m in Sources */,
+				0B3D581B03B27149145B7DE0E9EE4CE1 /* NSArray+PureLayout.m in Sources */,
+				69891F93FD4175DE6D0991D001256F92 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				BF3D6C75CF84771BA46FDAC59C01512A /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D56AF6039F7E292CDC7F8B7A5C421F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 7BEC2CE434F943936694B73B60447D2C /* PureLayout */;
+			targetProxy = 30DA46A6F36075CF46DD56DF82474130 /* PBXContainerItemProxy */;
+		};
+		4BA378DB259375EFD717D3F487F9B047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IoniconsSwift;
+			target = 1B5AB2C856EB68E3ECE8C535BF5957A0 /* IoniconsSwift */;
+			targetProxy = 4CA1FC9C8B67383DB0E31B1ABB80A539 /* PBXContainerItemProxy */;
+		};
+		834D9B2A8E7B7EE6532A6E729CE04802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */;
+			targetProxy = A1FE8FE992261CAF8F7FF4B88C9A2615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		017450EFF41FD32F8E418F387ECB60A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FDFC16EFAACDB638435DA630FE4151 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AC9F3AA201003DB3CDEA724D402031A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D060AA33BF3B0A3E063B2A598024BE /* IoniconsSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IoniconsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C539AEE664D04347DC9AF426049E428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FE68EE89BE6D2942039C2195D968AC /* Pods-Tip Calculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip Calculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip Calculator/Pods-Tip Calculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_Calculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5855D57D5707887BF2FC53FC6897E091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553AC2BCC460574BC7F293243FD4C408 /* Pods-Tip Calculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip Calculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip Calculator/Pods-Tip Calculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_Calculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61AC7B82F1F2889A6DF31FFDC1D1C0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23C1E6D0FEC41444946D1FFEA749447 /* Pods-Tip CalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip CalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip CalculatorUITests/Pods-Tip CalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_CalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C723D7FAFF395F9B56185525DBB2626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B5AF2F2AF84B94001579729DE667CE /* Pods-Tip CalculatorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip CalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip CalculatorTests/Pods-Tip CalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_CalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE7691327753E6C96105D81BE8D0A150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03042CDE209164884EE68159491E474F /* Pods-Tip CalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip CalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip CalculatorTests/Pods-Tip CalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_CalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0F3CEFC2FD51B8C34EA3D035EB590A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FDFC16EFAACDB638435DA630FE4151 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D17F4690E24F5B9EC2562BC83FC88A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D060AA33BF3B0A3E063B2A598024BE /* IoniconsSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IoniconsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D328BF5AC7A27E80E5214F7E51F21B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5EE1AF83C8E558F0C57745DDC75A68 /* Cosmos.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E8FFBAAF3F155FD16002C12A1DC0EF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5EE1AF83C8E558F0C57745DDC75A68 /* Cosmos.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE1159A52E46EA710EF3B5912DCEA79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D38493B0BE3A4E6A2B73C52578CE1E /* Pods-Tip CalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tip CalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tip CalculatorUITests/Pods-Tip CalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tip_CalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A5A752799146AD9381919644B9B63F /* Build configuration list for PBXNativeTarget "Pods-Tip Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5855D57D5707887BF2FC53FC6897E091 /* Debug */,
+				2C539AEE664D04347DC9AF426049E428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FFBAAF3F155FD16002C12A1DC0EF0E /* Debug */,
+				D328BF5AC7A27E80E5214F7E51F21B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82A4E82BB5A305DB7CB072A7C15CFDA2 /* Build configuration list for PBXNativeTarget "Pods-Tip CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7691327753E6C96105D81BE8D0A150 /* Debug */,
+				6C723D7FAFF395F9B56185525DBB2626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C1C6B03ABB1D1ADE2ECD9DEF49F0EBA /* Build configuration list for PBXNativeTarget "Pods-Tip CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AC7B82F1F2889A6DF31FFDC1D1C0DD /* Debug */,
+				FE1159A52E46EA710EF3B5912DCEA79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5547CA7AFC3BD313ADBAEEDF4F43AAF /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F3CEFC2FD51B8C34EA3D035EB590A2 /* Debug */,
+				017450EFF41FD32F8E418F387ECB60A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5666C1BE2926B5D196914EC98DA7D6D /* Build configuration list for PBXNativeTarget "IoniconsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC9F3AA201003DB3CDEA724D402031A /* Debug */,
+				D17F4690E24F5B9EC2562BC83FC88A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

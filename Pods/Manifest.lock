@@ -1,0 +1,18 @@
+PODS:
+  - Cosmos (8.0.2)
+  - IoniconsSwift (2.1.4)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - Cosmos
+  - IoniconsSwift
+  - PureLayout
+
+SPEC CHECKSUMS:
+  Cosmos: 007c0b8e33a85e5363911bdd933571bbe221f7ef
+  IoniconsSwift: a9034803dfe59ec48a73c95b812c67afdfa3ed08
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: a1abf31e000675d41cae0a332ffb86833c03290a
+
+COCOAPODS: 1.1.1

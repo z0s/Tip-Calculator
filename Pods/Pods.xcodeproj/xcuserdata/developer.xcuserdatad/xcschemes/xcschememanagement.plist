@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Cosmos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IoniconsSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tip Calculator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tip CalculatorTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tip CalculatorUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1B1F8D52788BAD55829E99671C8E205D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B5AB2C856EB68E3ECE8C535BF5957A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2CCDB65377498D3EAD3807CBFC477A8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FDC533A4360A68ABDCE852F04B30927</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BEC2CE434F943936694B73B60447D2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2B1CAAA54B8CF962F8CBA470EC9A878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
