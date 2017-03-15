@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B20D22B1E7932FA00AF814D /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20D22A1E7932FA00AF814D /* RateViewController.swift */; };
 		8BF0D9411E6E67F2003D2CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9401E6E67F2003D2CC8 /* AppDelegate.swift */; };
 		8BF0D9431E6E67F2003D2CC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9421E6E67F2003D2CC8 /* ViewController.swift */; };
 		8BF0D9461E6E67F2003D2CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF0D9441E6E67F2003D2CC8 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B20D22A1E7932FA00AF814D /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		8BF0D93D1E6E67F2003D2CC8 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0D9401E6E67F2003D2CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF0D9421E6E67F2003D2CC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				8BF0D9471E6E67F2003D2CC8 /* Assets.xcassets */,
 				8BF0D9491E6E67F2003D2CC8 /* LaunchScreen.storyboard */,
 				8BF0D94C1E6E67F2003D2CC8 /* Info.plist */,
+				8B20D22A1E7932FA00AF814D /* RateViewController.swift */,
 			);
 			path = "Tip Calculator";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B20D22B1E7932FA00AF814D /* RateViewController.swift in Sources */,
 				8BF0D9431E6E67F2003D2CC8 /* ViewController.swift in Sources */,
 				8BF0D9411E6E67F2003D2CC8 /* AppDelegate.swift in Sources */,
 			);
