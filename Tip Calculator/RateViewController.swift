@@ -10,13 +10,16 @@ import UIKit
 import Cosmos
 import IoniconsSwift
 
-let cosmosView = CosmosView()
-let titleLabel = UILabel()
-let subText = UILabel()
-let total = UILabel()
-let titleStr = "Rate the service you received tonight:".uppercased()
-let subTextStr = String().uppercased()
-var totalStr = String().uppercased()
+fileprivate let cosmosView = CosmosView()
+fileprivate let titleLabel = UILabel()
+fileprivate let subText = UILabel()
+fileprivate let tip = UILabel()
+fileprivate let splitBetween2 = UILabel()
+fileprivate let splitBetween3 = UILabel()
+fileprivate let splitBetween4 = UILabel()
+fileprivate let titleStr = "Rate the service \nyou received tonight:".uppercased()
+fileprivate let subTextStr = String().uppercased()
+fileprivate var totalStr = String().uppercased()
 fileprivate let splitImageView = UIImageView()
 fileprivate let splitImageView2 = UIImageView()
 fileprivate let splitImageView3 = UIImageView()
@@ -26,8 +29,8 @@ fileprivate let splitImageView6 = UIImageView()
 fileprivate let splitImageView7 = UIImageView()
 fileprivate let splitImageView8 = UIImageView()
 fileprivate let splitImageView9 = UIImageView()
-let closing = UILabel()
-let closingStr = "Bon Apetit!"
+fileprivate let closing = UILabel()
+fileprivate let closingStr = "Dolce Vita!"
 
 
 
@@ -39,8 +42,11 @@ class RateViewController: UIViewController {
         view.backgroundColor = .lightGray
         view.addSubview(titleLabel)
         view.addSubview(subText)
-        view.addSubview(total)
+        view.addSubview(tip)
         view.addSubview(cosmosView)
+        view.addSubview(splitBetween2)
+        view.addSubview(splitBetween3)
+        view.addSubview(splitBetween4)
         view.addSubview(splitImageView)
         view.addSubview(splitImageView2)
         view.addSubview(splitImageView3)
@@ -50,6 +56,7 @@ class RateViewController: UIViewController {
         view.addSubview(splitImageView7)
         view.addSubview(splitImageView8)
         view.addSubview(splitImageView9)
+        view.addSubview(closing)
         
         
         splitImageView.image = Ionicons.person.image(60, color: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0))
@@ -62,12 +69,24 @@ class RateViewController: UIViewController {
         splitImageView8.image = Ionicons.person.image(60, color: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0))
         splitImageView9.image = Ionicons.person.image(60, color: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0))
         
+          let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 28.0)! ]
  
+        
+        splitBetween2.autoAlignAxis(toSuperviewAxis: .horizontal)
+        splitBetween2.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
+        splitBetween2.backgroundColor = .black
+        splitBetween2.text = "Hey I am a placeholder."
+        
         splitImageView.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitImageView.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
         
         splitImageView2.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitImageView2.autoConstrainAttribute(.leading, to: .leading, of: splitImageView, withOffset: 50)
+        
+        splitBetween3.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
+        splitBetween3.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
+        splitBetween3.backgroundColor = .black
+        splitBetween3.text = "Hey I am a placeholder."
         
         splitImageView3.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitImageView3.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
@@ -77,6 +96,11 @@ class RateViewController: UIViewController {
         
         splitImageView5.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitImageView5.autoConstrainAttribute(.leading, to: .leading, of: splitImageView4, withOffset: 50)
+        
+        splitBetween4.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
+        splitBetween4.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
+        splitBetween4.backgroundColor = .black
+        splitBetween4.text = "Hey I am a placeholder."
         
         splitImageView6.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
         splitImageView6.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
@@ -92,8 +116,20 @@ class RateViewController: UIViewController {
         splitImageView9.autoConstrainAttribute(.leading, to: .leading, of: splitImageView8, withOffset: 50)
         
         titleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
+        titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 10)
+        titleLabel.attributedText = NSAttributedString(string: titleStr, attributes: attr)
+        titleLabel.textAlignment = .center
+//        titleLabel.sizeToFit()
+        titleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        titleLabel.numberOfLines = 0
+        
+        
         subText.autoAlignAxis(toSuperviewAxis: .vertical)
-        total.autoAlignAxis(toSuperviewAxis: .vertical)
+        tip.autoAlignAxis(toSuperviewAxis: .vertical)
+        tip.autoAlignAxis(toSuperviewAxis: .horizontal)
+        tip.text = "Your tip percent goes here."
+        
+        
         cosmosView.autoAlignAxis(toSuperviewAxis: .vertical)
         cosmosView.autoPinEdge(toSuperviewEdge: .top, withInset: 100)
         cosmosView.settings.starSize = 60
@@ -103,13 +139,35 @@ class RateViewController: UIViewController {
         cosmosView.settings.filledBorderColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
         cosmosView.settings.minTouchRating = 0
         
-        cosmosView.didTouchCosmos = {
-            (rating) in
+
+        cosmosView.didFinishTouchingCosmos = {
+            rating in
+            
+            switch rating {
+            case 0 :
+                tip.text = "10"
+            case 1 :
+                tip.text = "12"
+            case 2:
+                tip.text = "15"
+            case 3:
+                tip.text = "18"
+            case 4:
+                tip.text = "20"
+            case 5:
+                tip.text = "25"
+            default: break
+            }
         }
         
-        cosmosView.didFinishTouchingCosmos = { rating in }
-
-        // Do any additional setup after loading the view.
+        closing.attributedText = NSAttributedString(string: closingStr, attributes: attr)
+        closing.autoAlignAxis(toSuperviewAxis: .vertical)
+        closing.autoPinEdge(toSuperviewEdge: .bottom, withInset: 100)
+        
+    }
+    
+    func calculateTip(_ total: Float) -> Float{
+        return Float()
     }
 
     override var prefersStatusBarHidden: Bool {
