@@ -143,21 +143,21 @@ class RateViewController: UIViewController {
         cosmosView.didFinishTouchingCosmos = {
             rating in
             
-//            switch rating {
-//            case 0 :
-//                tip.text = "10"
-//            case 1 :
-//                tip.text = "12"
-//            case 2:
-//                tip.text = "15"
-//            case 3:
-//                tip.text = "18"
-//            case 4:
-//                tip.text = "20"
-//            case 5:
-//                tip.text = "25"
-//            default: break
-//            }
+            switch rating {
+            case 0 :
+                total.text = "10"
+            case 1 :
+                total.text = "12"
+            case 2:
+                total.text = "15"
+            case 3:
+                total.text = "18"
+            case 4:
+                total.text = "20"
+            case 5:
+                total.text = "25"
+            default: break
+            }
         }
         
         closing.attributedText = NSAttributedString(string: closingStr, attributes: attr)
