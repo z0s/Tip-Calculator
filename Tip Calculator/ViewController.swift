@@ -10,7 +10,8 @@ import UIKit
 import IoniconsSwift
 
 class ViewController: UIViewController {
-    
+    fileprivate var currentString = ""
+    fileprivate var tipStr: String = ""
     fileprivate let titleLabel = UILabel()
     fileprivate let inputTextField = UITextField()
     fileprivate let adjustdedTotal = UILabel()
@@ -28,16 +29,18 @@ class ViewController: UIViewController {
     fileprivate let splitImageView8 = UIImageView()
     fileprivate let splitImageView9 = UIImageView()
     fileprivate let tipItems = ["12%","15%","18%","20%","25%"]
-    fileprivate let items = ["None".uppercased(),"Total".uppercased(),"Tips".uppercased()]
+    fileprivate let items = ["Round None".uppercased(),"Round Total".uppercased(),"Round Tips".uppercased()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let tipSegmentedControl = UISegmentedControl(items: tipItems)
         let lusterSegmentedControl = UISegmentedControl(items: items)
+       
         view.backgroundColor = .lightGray
         view.addSubview(titleLabel)
         view.addSubview(inputTextField)
         view.addSubview(tipLabel)
+        view.addSubview(adjustdedTotal)
         view.addSubview(tipSegmentedControl)
         view.addSubview(lusterSegmentedControl)
         view.addSubview(splitBetween2)
@@ -53,9 +56,6 @@ class ViewController: UIViewController {
         view.addSubview(splitImageView8)
         view.addSubview(splitImageView9)
         
-        
-//
-        
         let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
         let attrForPlaceholder = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 70.0)! ]
         
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         titleLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 10)
         titleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
         
-        inputTextField.keyboardType = .decimalPad
+//        inputTextField.keyboardType = .decimalPad
         
         inputTextField.autoPinEdge(.top, to: .bottom, of: titleLabel, withOffset: 20)
         inputTextField.backgroundColor = .clear
@@ -76,25 +76,20 @@ class ViewController: UIViewController {
         inputTextField.textColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
         inputTextField.textAlignment = .right
         inputTextField.delegate = self
-//        inputTextField.addTarget(self, action: #selector(), for: .editingChanged)
-//        
+        
         inputTextField.attributedPlaceholder = NSAttributedString(string: "$", attributes: attrForPlaceholder)
-
+        
         
         let str =  "Hey I am a placeholder."
-        tipSegmentedControl.selectedSegmentIndex = 0
-        let tipStr = tipSegmentedControl.titleForSegment(at: tipSegmentedControl.selectedSegmentIndex)
         
-        
-        let attrStr = NSAttributedString(string: str, attributes: attr)
-        let attrStrForTip = NSAttributedString(string: tipStr!, attributes: attr)
+        tipSegmentedControl.addTarget(self, action: #selector(tipSegmentedControlTouched(sender:)), for: .valueChanged)
 
-        
+        let attrStr = NSAttributedString(string: str, attributes: attr)
+
         tipLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
-//        tipLabel.autoAlignAxis(toSuperviewAxis: .vertical)
         tipLabel.autoPinEdge(toSuperviewEdge: .top, withInset: 200)
         
-        tipLabel.attributedText = attrStrForTip
+        
         splitBetween2.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitBetween2.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
         splitBetween2.backgroundColor = .black
@@ -158,7 +153,7 @@ class ViewController: UIViewController {
         tipSegmentedControl.autoAlignAxis(toSuperviewAxis: .vertical)
         tipSegmentedControl.autoPinEdge(toSuperviewEdge: .bottom, withInset: 150)
         tipSegmentedControl.autoSetDimension(.height, toSize: 30)
-
+        
         lusterSegmentedControl.tintColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
         lusterSegmentedControl.autoPinEdge(toSuperviewEdge: .bottom, withInset: 100)
         lusterSegmentedControl.autoSetDimension(.height, toSize: 30)
@@ -169,25 +164,106 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         get { return true }
     }
-    
+    func tipSegmentedControlTouched(sender : UISegmentedControl) -> String {
+        tipStr = sender.titleForSegment(at: sender.selectedSegmentIndex)!
+        var tipValues = [0.12,0.15,0.18,0.20,0.25]
+        var totalDouble = Double()
+//        switch sender.selectedSegmentIndex {
+//        case 0:
+        let nsString : NSString  =  NSString(string: inputTextField.text!)
+        totalDouble = (nsString.doubleValue)*(tipValues[sender.selectedSegmentIndex])
+        
+//        totalDouble = NSString(inputTextField.text!).doubleValue*tipValues[sender.selectedSegmentIndex]
+        print(totalDouble)
+//        case 1:
+//        case 2:
+//        case 3:
+//        case 4:
+//        default:
+//            
+//            
+//        }
+        let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
+        let attrStrForTip = NSAttributedString(string: tipStr, attributes: attr)
+        tipLabel.attributedText = attrStrForTip
+        return tipStr
+    }
     func textFieldHasValueChanged() {
         
     }
     
-
+    
 }
 extension ViewController : UITextFieldDelegate  {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 7
-        let currentString = textField.text! as NSString
-        let newString: NSString =
-            currentString.replacingCharacters(in: range, with: string) as NSString
-        return newString.length <= maxLength
-//        return ((textField.text?.characters.count)! <= 5)
+        
+        //We return true here so that changes that do not effect number of characters.
+        if string.characters.count == 0 {
+            currentString = String()
+            return true
+        }
+        switch string {
+        case "0","1","2","3","4","5","6","7","8","9":
+            
+            if currentString.characters.count < 6 {
+                currentString += string
+            }
+            print(currentString)
+            formatCurrency(currentString)
+        default:
+            break
+//            var array = Array(string.characters)
+//            var currentStringArray = Array(currentString.characters)
+//            if array.count == 0 && currentStringArray.count != 0 {
+//                currentStringArray.removeLast()
+//                currentString = ""
+//                
+//                for character in currentStringArray {
+//                    if currentString.characters.count < 7 {
+//                        currentString += String(character)
+//                    }
+//                }
+//                formatCurrency(currentString)
+//            }
+        }
+        return false //currentString.isNumeric() && currentString.characters.count <= 7
+        //        let maxLength = 7
+        //        let currentString = textField.text! as NSString
+        //        let newString = currentString.replacingCharacters(in: range, with: string)
+        //
+        //
+        //        return newString.isNumeric() && newString.characters.count <= maxLength
+
+    }
+    func formatCurrency(_ string: String) {
+        print("format \(string)")
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.currency
+        formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale!
+        var numberFromField = (NSString(string: currentString).doubleValue)/100
+        
+        inputTextField.text = formatter.string(from: numberFromField as NSNumber)
+        print(inputTextField.text)
     }
 }
+
+//
+//extension String {
+//    func isNumeric() -> Bool
+//    {
+//        let scanner = Scanner(string: self)
+//        
+//        scanner.locale = Locale.current
+//        
+//        return scanner.scanDecimal(nil) && scanner.isAtEnd
+//    }
+//}
 
