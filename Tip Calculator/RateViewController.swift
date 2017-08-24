@@ -173,8 +173,8 @@ class RateViewController: UIViewController {
         return Float()
     }
 
-    override var prefersStatusBarHidden: Bool {
-        get { return true }
-    }
+//    override var prefersStatusBarHidden: Bool {
+//        get { return true }
+//    }
 
 }
