@@ -248,10 +248,10 @@ extension ViewController : UITextFieldDelegate  {
         let formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.currency
         formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale!
-        var numberFromField = (NSString(string: currentString).doubleValue)/100
+        let numberFromField = (NSString(string: currentString).doubleValue)/100
         
         inputTextField.text = formatter.string(from: numberFromField as NSNumber)
-        print(inputTextField.text)
+        print(inputTextField.text!)
     }
 }
 

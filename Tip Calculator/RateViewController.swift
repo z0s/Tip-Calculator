@@ -10,36 +10,33 @@ import UIKit
 import Cosmos
 import IoniconsSwift
 
-fileprivate let cosmosView = CosmosView()
-fileprivate let titleLabel = UILabel()
-fileprivate let total = UILabel()
-fileprivate var tip = Int()
-fileprivate let splitBetween2 = UILabel()
-fileprivate let splitBetween3 = UILabel()
-fileprivate let splitBetween4 = UILabel()
-fileprivate let titleStr = "Rate the experience \nyou enjoyed tonight:".capitalized
-fileprivate let subTextStr = String().uppercased()
-fileprivate let totalStr = "Pay an adjusted total \ncost of $().".capitalized
-fileprivate let splitImageView = UIImageView()
-fileprivate let splitImageView2 = UIImageView()
-fileprivate let splitImageView3 = UIImageView()
-fileprivate let splitImageView4 = UIImageView()
-fileprivate let splitImageView5 = UIImageView()
-fileprivate let splitImageView6 = UIImageView()
-fileprivate let splitImageView7 = UIImageView()
-fileprivate let splitImageView8 = UIImageView()
-fileprivate let splitImageView9 = UIImageView()
-fileprivate let closing = UILabel()
-fileprivate let closingStr = "Dolce Vita!"
-
-
-
 
 class RateViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .lightGray
+    
+    fileprivate let cosmosView = CosmosView()
+    fileprivate let titleLabel = UILabel()
+    fileprivate let total = UILabel()
+    fileprivate var tip = Int()
+    fileprivate let splitBetween2 = UILabel()
+    fileprivate let splitBetween3 = UILabel()
+    fileprivate let splitBetween4 = UILabel()
+    fileprivate let titleStr = "Rate the experience \nyou enjoyed tonight:".capitalized
+    fileprivate let subTextStr = String().uppercased()
+    fileprivate let totalStr = "Pay an adjusted total \ncost of $().".capitalized
+    fileprivate let splitImageView = UIImageView()
+    fileprivate let splitImageView2 = UIImageView()
+    fileprivate let splitImageView3 = UIImageView()
+    fileprivate let splitImageView4 = UIImageView()
+    fileprivate let splitImageView5 = UIImageView()
+    fileprivate let splitImageView6 = UIImageView()
+    fileprivate let splitImageView7 = UIImageView()
+    fileprivate let splitImageView8 = UIImageView()
+    fileprivate let splitImageView9 = UIImageView()
+    fileprivate let closing = UILabel()
+    fileprivate let closingStr = "Dolce Vita!"
+    
+    
+    func addSubviews() {
         view.addSubview(titleLabel)
         view.addSubview(total)
         view.addSubview(cosmosView)
@@ -56,7 +53,12 @@ class RateViewController: UIViewController {
         view.addSubview(splitImageView8)
         view.addSubview(splitImageView9)
         view.addSubview(closing)
-        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .lightGray
+        addSubviews()
         
         splitImageView.image = Ionicons.person.image(60, color: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0))
         splitImageView2.image = Ionicons.person.image(60, color: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0))
@@ -145,17 +147,17 @@ class RateViewController: UIViewController {
             
             switch rating {
             case 0 :
-                total.text = "10"
+                self.total.text = "10"
             case 1 :
-                total.text = "12"
+                self.total.text = "12"
             case 2:
-                total.text = "15"
+                self.total.text = "15"
             case 3:
-                total.text = "18"
+                self.total.text = "18"
             case 4:
-                total.text = "20"
+                self.total.text = "20"
             case 5:
-                total.text = "25"
+                self.total.text = "25"
             default: break
             }
         }
@@ -166,7 +168,8 @@ class RateViewController: UIViewController {
         
     }
     
-    func calculateTip(_ total: Float) -> Float{
+    func calculateTip(_ total: Float) -> Float {
+//        total 
         return Float()
     }
 
