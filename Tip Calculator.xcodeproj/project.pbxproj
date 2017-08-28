@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13A9884D4D8590A881157BD2 /* Pods_Tip_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D9B16053E0038B53CB26BA /* Pods_Tip_CalculatorUITests.framework */; };
+		3D28E9661F53DD2C00EE01D7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28E9651F53DD2C00EE01D7 /* SettingsViewController.swift */; };
 		8B20D22B1E7932FA00AF814D /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B20D22A1E7932FA00AF814D /* RateViewController.swift */; };
 		8BF0D9411E6E67F2003D2CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9401E6E67F2003D2CC8 /* AppDelegate.swift */; };
-		8BF0D9431E6E67F2003D2CC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9421E6E67F2003D2CC8 /* ViewController.swift */; };
+		8BF0D9431E6E67F2003D2CC8 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9421E6E67F2003D2CC8 /* CalculateViewController.swift */; };
 		8BF0D9481E6E67F2003D2CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF0D9471E6E67F2003D2CC8 /* Assets.xcassets */; };
 		8BF0D94B1E6E67F2003D2CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF0D9491E6E67F2003D2CC8 /* LaunchScreen.storyboard */; };
 		8BF0D9561E6E67F2003D2CC8 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0D9551E6E67F2003D2CC8 /* Tip_CalculatorTests.swift */; };
@@ -39,11 +40,12 @@
 /* Begin PBXFileReference section */
 		1B7F959F7599E3463BAFEF2B /* Pods-Tip CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip CalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tip CalculatorTests/Pods-Tip CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		26C45AA6B0D324CCBA71AC70 /* Pods-Tip CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip CalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip CalculatorUITests/Pods-Tip CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D28E9651F53DD2C00EE01D7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5371F1237C1EEEFBE689AFE7 /* Pods-Tip CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip CalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip CalculatorTests/Pods-Tip CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B20D22A1E7932FA00AF814D /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		8BF0D93D1E6E67F2003D2CC8 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF0D9401E6E67F2003D2CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BF0D9421E6E67F2003D2CC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BF0D9421E6E67F2003D2CC8 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		8BF0D9471E6E67F2003D2CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF0D94A1E6E67F2003D2CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF0D94C1E6E67F2003D2CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,11 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				8BF0D9401E6E67F2003D2CC8 /* AppDelegate.swift */,
-				8BF0D9421E6E67F2003D2CC8 /* ViewController.swift */,
+				8BF0D9421E6E67F2003D2CC8 /* CalculateViewController.swift */,
 				8BF0D9471E6E67F2003D2CC8 /* Assets.xcassets */,
 				8BF0D9491E6E67F2003D2CC8 /* LaunchScreen.storyboard */,
 				8BF0D94C1E6E67F2003D2CC8 /* Info.plist */,
 				8B20D22A1E7932FA00AF814D /* RateViewController.swift */,
+				3D28E9651F53DD2C00EE01D7 /* SettingsViewController.swift */,
 			);
 			path = "Tip Calculator";
 			sourceTree = "<group>";
@@ -447,8 +450,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B20D22B1E7932FA00AF814D /* RateViewController.swift in Sources */,
-				8BF0D9431E6E67F2003D2CC8 /* ViewController.swift in Sources */,
+				8BF0D9431E6E67F2003D2CC8 /* CalculateViewController.swift in Sources */,
 				8BF0D9411E6E67F2003D2CC8 /* AppDelegate.swift in Sources */,
+				3D28E9661F53DD2C00EE01D7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
