@@ -19,10 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow()
-        let vc = ViewController()
+        let vc = CalculateViewController()
         let tabBar = UITabBarController()
         let rateVC = RateViewController()
-        tabBar.setViewControllers([vc, rateVC], animated: true)
+        let settingsVC = SettingsViewController()
+        tabBar.setViewControllers([vc, rateVC, settingsVC], animated: true)
         
         let vcBarItem = UITabBarItem()
         vcBarItem.image = Ionicons.socialUsdOutline.image(35, color: .black)
@@ -33,10 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rateBarItem.image = Ionicons.star.image(35, color: .black)
         rateBarItem.title = "Rate"
         rateVC.tabBarItem = rateBarItem
-            
-            
         
-        
+        let settingsBarItem = UITabBarItem()
+        settingsBarItem.image = Ionicons.iosGearOutline.image(35, color: .black)
+        settingsBarItem.title = "Settings"
+        settingsVC.tabBarItem = settingsBarItem
         
         window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
