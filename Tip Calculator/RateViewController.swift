@@ -16,6 +16,7 @@ class RateViewController: UIViewController {
     fileprivate let cosmosView = CosmosView()
     fileprivate let titleLabel = UILabel()
     fileprivate let total = UILabel()
+//    fileprivate let tipCost = UILabel()
     fileprivate var tip = Int()
     fileprivate let splitBetween2 = UILabel()
     fileprivate let splitBetween3 = UILabel()
@@ -39,6 +40,7 @@ class RateViewController: UIViewController {
     func addSubviews() {
         view.addSubview(titleLabel)
         view.addSubview(total)
+//        view.addSubview(tipCost)
         view.addSubview(cosmosView)
         view.addSubview(splitBetween2)
         view.addSubview(splitBetween3)
@@ -123,6 +125,14 @@ class RateViewController: UIViewController {
         titleLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         titleLabel.numberOfLines = 0
         
+        
+//        
+//        tipCost.autoAlignAxis(toSuperviewAxis: .vertical)
+//        tipCost.autoPinEdge(toSuperviewEdge: .top, withInset: 190)
+//        tipCost.textAlignment = .center
+//        tipCost.numberOfLines = 0
+//        tipCost.lineBreakMode = NSLineBreakMode.byWordWrapping
+//        tipCost.attributedText = NSAttributedString(string: totalStr, attributes: attr)
         
         total.autoAlignAxis(toSuperviewAxis: .vertical)
         total.autoPinEdge(toSuperviewEdge: .top, withInset: 240)

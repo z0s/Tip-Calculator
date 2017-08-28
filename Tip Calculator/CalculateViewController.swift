@@ -17,6 +17,7 @@ class CalculateViewController: UIViewController {
     fileprivate let inputTextField = UITextField()
     fileprivate let adjustedTotal = UILabel()
     fileprivate var tipLabel = UILabel()
+    fileprivate let tipCost = UILabel()
     fileprivate let splitBetween2 = UILabel()
     fileprivate let splitBetween3 = UILabel()
     fileprivate let splitBetween4 = UILabel()
@@ -31,7 +32,7 @@ class CalculateViewController: UIViewController {
     fileprivate let splitImageView9 = UIImageView()
 
     fileprivate let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
-    fileprivate let str =  "Placeholder."
+    fileprivate let str =  ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,14 @@ class CalculateViewController: UIViewController {
     }
     
     func setupAdjustedTotalView() {
+        
+        tipCost.autoAlignAxis(toSuperviewAxis: .vertical)
+        tipCost.autoPinEdge(toSuperviewEdge: .top, withInset: 190)
+        tipCost.textAlignment = .center
+        tipCost.numberOfLines = 0
+        tipCost.lineBreakMode = NSLineBreakMode.byWordWrapping
+//        tipCost.attributedText = NSAttributedString(string: totalStr, attributes: attr)
+        
         adjustedTotal.autoAlignAxis(toSuperviewAxis: .vertical)
         adjustedTotal.autoPinEdge(.top, to: .bottom, of: inputTextField, withOffset: 85.0)
         
@@ -84,7 +93,7 @@ class CalculateViewController: UIViewController {
         splitBetween2.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitBetween2.autoSetDimension(.width, toSize: 130)
         splitBetween2.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
-        splitBetween2.backgroundColor = .black
+        splitBetween2.backgroundColor = .clear
         splitBetween2.attributedText = attrStr
         splitImageView.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitImageView.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
@@ -97,7 +106,7 @@ class CalculateViewController: UIViewController {
         let attrStr = NSAttributedString(string: str, attributes: attr)
         splitBetween3.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitBetween3.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
-        splitBetween3.backgroundColor = .black
+        splitBetween3.backgroundColor = .clear
         splitBetween3.attributedText = attrStr
         splitImageView3.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitImageView3.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
@@ -112,9 +121,10 @@ class CalculateViewController: UIViewController {
         let attrStr = NSAttributedString(string: str, attributes: attr)
         splitBetween4.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
         splitBetween4.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
-        splitBetween4.backgroundColor = .black
+        splitBetween4.backgroundColor = .clear
         splitBetween4.attributedText = attrStr
         splitBetween4.autoSetDimension(.width, toSize: 130)
+        
         splitImageView6.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
         splitImageView6.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
         
@@ -135,6 +145,7 @@ class CalculateViewController: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(inputTextField)
         view.addSubview(tipLabel)
+        view.addSubview(tipCost)
         view.addSubview(adjustedTotal)
         view.addSubview(splitBetween2)
         view.addSubview(splitBetween3)
@@ -175,10 +186,13 @@ class CalculateViewController: UIViewController {
             var totalDouble = Double()
             let nsString : NSString  =  NSString(string: currentString)
             totalDouble = (nsString.doubleValue/100)*(tipValues[(dict.first?.key)!-1])
-            adjustedTotal.text = String(totalDouble)
+            tipCost.text = String(totalDouble)
             let adjustedTotalCost = totalDouble + (nsString.doubleValue/100)
             print(adjustedTotalCost)
-//            adjustedTotal.text = String(adjustedTotalCost)
+            splitBetween2.text = String(adjustedTotalCost/2)
+            splitBetween3.text = String(adjustedTotalCost/3)
+            splitBetween4.text = String(adjustedTotalCost/4)
+            adjustedTotal.text = String(adjustedTotalCost)
         }
     }
     
