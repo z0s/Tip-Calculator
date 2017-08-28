@@ -9,7 +9,7 @@
 import UIKit
 import IoniconsSwift
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
     
     fileprivate var currentString = ""
     fileprivate var tipStr: String = ""
@@ -29,18 +29,13 @@ class ViewController: UIViewController {
     fileprivate let splitImageView7 = UIImageView()
     fileprivate let splitImageView8 = UIImageView()
     fileprivate let splitImageView9 = UIImageView()
-    fileprivate let tipItems = ["12%","15%","18%","20%","25%"]
-    fileprivate let items = ["Round None".uppercased(),"Round Total".uppercased(),"Round Tips".uppercased()]
+
     fileprivate let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
-    fileprivate let str =  "Hey I am a placeholder."
+    fileprivate let str =  "Placeholder."
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tipSegmentedControl = UISegmentedControl(items: tipItems)
-        let lusterSegmentedControl = UISegmentedControl(items: items)
-        view.addSubview(tipSegmentedControl)
-        view.addSubview(lusterSegmentedControl)
+        inputTextField.becomeFirstResponder()
         
         addSubviews()
         setupInputTextField()
@@ -58,20 +53,12 @@ class ViewController: UIViewController {
         setupViewForSplitAmongThree()
         setupViewForSplitAmongFour()
         
-        tipSegmentedControl.addTarget(self, action: #selector(tipSegmentedControlTouched(sender:)), for: .valueChanged)
-        
         tipLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
         tipLabel.autoPinEdge(.top, to: .bottom, of: inputTextField, withOffset: 5)
         
-        tipSegmentedControl.tintColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
-        tipSegmentedControl.autoAlignAxis(toSuperviewAxis: .vertical)
-        tipSegmentedControl.autoPinEdge(toSuperviewEdge: .bottom, withInset: 150)
-        tipSegmentedControl.autoSetDimension(.height, toSize: 30)
         
-        lusterSegmentedControl.tintColor = UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0)
-        lusterSegmentedControl.autoPinEdge(toSuperviewEdge: .bottom, withInset: 100)
-        lusterSegmentedControl.autoSetDimension(.height, toSize: 30)
-        lusterSegmentedControl.autoAlignAxis(toSuperviewAxis: .vertical)
+        NotificationCenter.default.addObserver(self, selector: #selector(selectTipValues), name: Notification.Name("TipPercent"), object: nil)
+
     }
     
     func setupAdjustedTotalView() {
@@ -95,11 +82,12 @@ class ViewController: UIViewController {
     func setupViewForSplitAmongTwo() {
         let attrStr = NSAttributedString(string: str, attributes: attr)
         splitBetween2.autoAlignAxis(toSuperviewAxis: .horizontal)
+        splitBetween2.autoSetDimension(.width, toSize: 130)
         splitBetween2.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
         splitBetween2.backgroundColor = .black
         splitBetween2.attributedText = attrStr
         splitImageView.autoAlignAxis(toSuperviewAxis: .horizontal)
-        splitImageView.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
+        splitImageView.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
         splitImageView2.autoAlignAxis(toSuperviewAxis: .horizontal)
         splitImageView2.autoConstrainAttribute(.leading, to: .leading, of: splitImageView, withOffset: 50)
         
@@ -112,11 +100,12 @@ class ViewController: UIViewController {
         splitBetween3.backgroundColor = .black
         splitBetween3.attributedText = attrStr
         splitImageView3.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
-        splitImageView3.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
+        splitImageView3.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
         splitImageView4.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitImageView4.autoConstrainAttribute(.leading, to: .leading, of: splitImageView3, withOffset: 50)
         splitImageView5.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView, withOffset: 70)
         splitImageView5.autoConstrainAttribute(.leading, to: .leading, of: splitImageView4, withOffset: 50)
+        splitBetween3.autoSetDimension(.width, toSize: 130)
     }
     
     func setupViewForSplitAmongFour() {
@@ -125,9 +114,9 @@ class ViewController: UIViewController {
         splitBetween4.autoPinEdge(toSuperviewEdge: .trailing, withInset: 30)
         splitBetween4.backgroundColor = .black
         splitBetween4.attributedText = attrStr
-        
+        splitBetween4.autoSetDimension(.width, toSize: 130)
         splitImageView6.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
-        splitImageView6.autoPinEdge(toSuperviewEdge: .leading, withInset: 30)
+        splitImageView6.autoPinEdge(toSuperviewEdge: .leading, withInset: 10)
         
         
         splitImageView7.autoAlignAxis(.horizontal, toSameAxisOf: splitImageView3, withOffset: 70)
@@ -176,19 +165,21 @@ class ViewController: UIViewController {
         inputTextField.attributedPlaceholder = NSAttributedString(string: "$", attributes: attrForPlaceholder)
     }
     
-    func tipSegmentedControlTouched(sender : UISegmentedControl) -> String {
-        tipStr = sender.titleForSegment(at: sender.selectedSegmentIndex)!
-        var tipValues = [0.12,0.15,0.18,0.20,0.25]
-        var totalDouble = Double()
-        let nsString : NSString  =  NSString(string: currentString)
-        totalDouble = (nsString.doubleValue/100)*(tipValues[sender.selectedSegmentIndex])
-
-        let adjustedTotalCost = totalDouble + (nsString.doubleValue/100)
-        adjustedTotal.text = String(adjustedTotalCost)
-        let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
-        let attrStrForTip = NSAttributedString(string: tipStr, attributes: attr)
-        tipLabel.attributedText = attrStrForTip
-        return tipStr
+    func selectTipValues(note: Notification) {
+        if let dict = note.userInfo as? [Int:String] {
+            tipStr = (dict.first?.value)!
+            let attr = [NSForegroundColorAttributeName: UIColor(red: 0, green: 0.5373, blue: 0.8275, alpha: 1.0), NSFontAttributeName: UIFont(name: "Chalkduster", size: 30.0)! ]
+            let attrStrForTip = NSAttributedString(string: tipStr, attributes: attr)
+            tipLabel.attributedText = attrStrForTip
+            var tipValues = [0.12,0.15,0.18,0.20,0.25]
+            var totalDouble = Double()
+            let nsString : NSString  =  NSString(string: currentString)
+            totalDouble = (nsString.doubleValue/100)*(tipValues[(dict.first?.key)!-1])
+            adjustedTotal.text = String(totalDouble)
+            let adjustedTotalCost = totalDouble + (nsString.doubleValue/100)
+            print(adjustedTotalCost)
+//            adjustedTotal.text = String(adjustedTotalCost)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -198,7 +189,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController:UITextFieldDelegate {
+extension CalculateViewController:UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
@@ -206,6 +197,7 @@ extension ViewController:UITextFieldDelegate {
             currentString = ""
             return true
         }
+        // if longer than 10 minutes, reset userdefaults
         
         switch string {
         case "0","1","2","3","4","5","6","7","8","9":
@@ -229,8 +221,6 @@ extension ViewController:UITextFieldDelegate {
         formatter.numberStyle = NumberFormatter.Style.currency
         formatter.locale = NSLocale(localeIdentifier: "en_US") as Locale!
         let numberFromField = (NSString(string: currentString).doubleValue)/100
-        
         inputTextField.text = formatter.string(from: numberFromField as NSNumber)
-        print(inputTextField.text!)
     }
 }
